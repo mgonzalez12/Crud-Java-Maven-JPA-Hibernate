@@ -62,7 +62,7 @@ public class MainApp {
 					System.out.println();
 					System.out.println("Producto no encontrado... Lista de productos completa");
 					List<Producto> listaProductos= new ArrayList<Producto>();
-					Query query=entity.createQuery("SELECT p FROM Productos p");
+					Query query=entity.createQuery("SELECT p FROM Producto p");
 					listaProductos=query.getResultList();
 					for (Producto p : listaProductos) {
 						System.out.println(p);
